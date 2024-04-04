@@ -2,6 +2,12 @@
 :root {
 	--global-color-1: #800000;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	background-color: white;
 }
@@ -16,7 +22,16 @@ body {
 }
 
 header{
+	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
+	background-image: -moz-linear-gradient(
+			30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -webkit-linear-gradient(
+			30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -o-linear-gradient(
+			30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: linear-gradient(
+			30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
 a:focus, a:hover {
 	font-style: italic;
@@ -25,15 +40,14 @@ a:focus, a:hover {
 header h2 {
 	font-size: 175%;
 	color: var(--global-color-1);
-	text-indent: 30px;
 }
 header h3 {
 	font-size: 130%;
 	font-style: italic;
-	text-indent: 30px;
 }
 header img {
 	float: left;
+	padding: 0 30px;
 }
 .shadow {
 	text-shadow: 2px 2px 2px var(--global-color-1);
@@ -41,10 +55,14 @@ header img {
 /* the styles for the main content */
 main {
 	clear: left;
+	padding: 0 30px;
 }
+
 main h1 {
 	font-size: 150%;
 	padding: .3em 0;
+	border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420;
 }
 main h2 {
 	color: var(--global-color-1);
@@ -71,9 +89,13 @@ main ul {
 main li {
 	padding-bottom: .35em;
 }
+footer{
+	background-color: #931420;
+}
 
 /* the styles for the footer */
 footer p {
 	text-align: center;
+	color: white;
 	padding: 1em 0;
 }
